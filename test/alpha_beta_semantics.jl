@@ -88,6 +88,8 @@ const SEMANTICS_SIZES = [(5, 7, 3), (16, 16, 16), (150, 140, 200), (4, 4, 0), (0
             (ComplexF32, SIMDKernel{8, 8, 6, ComplexF32}()),
             (Float64,    ScalarKernel{4, 4}()),
             (Float32,    ScalarKernel{8, 6}()),
+            (ComplexF64, ScalarKernel{4, 4}()),
+            (ComplexF32, ScalarKernel{8, 6}()),
         )
         for (M, N, K) in SEMANTICS_SIZES
             check_alpha_beta_semantics(T, M, N, K; kernel)
