@@ -5,6 +5,7 @@ include("transpose_check.jl")
 include("test_libjublas.jl")
 include("alpha_beta_semantics.jl")
 include("strided_layouts.jl")
+include("scalar_kernel.jl")
 
 Random.seed!(0)
 
